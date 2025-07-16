@@ -1,0 +1,498 @@
+/* Global styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  color: #2c3e50;
+  background-color: #ffffff;
+}
+
+/* Hero Section */
+.hero-section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(30, 41, 59, 0.9), rgba(51, 65, 85, 0.9)), url('votre-photo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at center, rgba(96, 165, 250, 0.1) 0%, rgba(30, 41, 59, 0.2) 100%);
+  pointer-events: none;
+}
+
+.hero-content {
+  max-width: 1200px;
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* Profile Container */
+.profile-container {
+  width: 220px;
+  height: 220px;
+  margin: 0 auto 2.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.3);
+  position: relative;
+  border: 4px solid rgba(255, 255, 255, 0.2);
+}
+
+.profile-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+  filter: brightness(1.05);
+}
+
+.profile-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(30, 41, 59, 0.1), rgba(30, 41, 59, 0.4));
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.profile-container:hover .profile-photo {
+  transform: scale(1.12);
+}
+
+.profile-container:hover .profile-overlay {
+  opacity: 1;
+}
+
+/* Typing Text Animation */
+.typing-text {
+  height: 1.5em;
+  margin: 1.5rem 0 3rem;
+  font-size: 1.3rem;
+  color: #94a3b8;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Dashboard */
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.2rem;
+  max-width: 1000px;
+  width: 100%;
+  margin: 2rem auto 0;
+  padding: 0 1rem;
+}
+
+.dashboard-item {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 1.8rem 1rem;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.dashboard-item i {
+  font-size: 1.8rem;
+  color: #60a5fa;
+  transition: transform 0.3s ease;
+}
+
+.dashboard-item span {
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.dashboard-item:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-item:hover i {
+  transform: scale(1.1);
+}
+
+.hero-section h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  letter-spacing: 1px;
+}
+
+/* Container for main content */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.section h2, .section h3 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section p {
+  text-align: justify;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.profile-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 1.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.profile-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(44, 62, 80, 0.1), rgba(44, 62, 80, 0.4));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.profile-container:hover .profile-photo {
+  transform: scale(1.05);
+}
+
+.profile-container:hover .profile-overlay {
+  opacity: 1;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  margin: 1rem 0;
+}
+
+.sidebar nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.sidebar nav ul li a:hover {
+  color: #38bdf8;
+}
+
+/* Contenu principal (mon_portofolio.html) */
+.content {
+  width: 75%;
+  background-color: #f8f9fa;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+.section {
+  background-color: white;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.project {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+  background: white;
+  transition: all 0.3s ease;
+}
+
+.project:hover {
+  border-color: #2c3e50;
+}
+
+.project h3 {
+  color: #2c3e50;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.project ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.project ul li {
+  margin-bottom: 0.8rem;
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+.project ul li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #2c3e50;
+}
+
+.project ul ul {
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+}
+
+.project ul ul li {
+  margin-bottom: 0.4rem;
+  font-size: 0.95em;
+  color: #4a5568;
+}
+
+.project ul ul li::before {
+  content: '◦';
+  color: #4a5568;
+}
+
+.project ul li:last-child {
+  margin-bottom: 0;
+}
+
+/* Styles pour la section expérience */
+.experience-item {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background: white;
+  border: 1px solid #e9ecef;
+  transition: all 0.3s ease;
+}
+
+.experience-item:hover {
+  border-color: #2c3e50;
+}
+
+.experience-item h3 {
+  color: #2c3e50;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.experience-period {
+  color: #64748b;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.experience-item ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.experience-item ul li {
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.6;
+  color: #4a5568;
+}
+
+.experience-item ul li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: #2c3e50;
+}
+
+.experience-item ul li:last-child {
+  margin-bottom: 0;
+}
+
+.section h2 {
+  border-bottom: 2px solid #1e293b;
+  padding-bottom: 0.5rem;
+  color: #1e293b;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.section h2 i {
+  color: #38bdf8;
+}
+
+/* Styles pour la section compétences */
+.skills {
+  margin-top: 2rem;
+}
+
+.skills h3 {
+  color: #1e293b;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.skill-category {
+  margin: 1.5rem 0;
+  background: #f8fafc;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.skill-category h4 {
+  color: #38bdf8;
+  margin: 0 0 1rem 0;
+}
+
+.skill-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.skill-item {
+  background: #38bdf8;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  transition: transform 0.2s;
+}
+
+.skill-item:hover {
+  transform: scale(1.05);
+  background: #0284c7;
+}
+
+/* Styles spécifiques pour la galerie */
+.gallery {
+  padding: 2rem;
+}
+
+.gallery h2 {
+  color: #1e293b;
+  margin-bottom: 1rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.video-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.video-container video {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Formulaire (mon_portofolio.html) */
+form label {
+  display: block;
+  margin-top: 1rem;
+}
+
+form input, form textarea, form button {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  background-color: #1e293b;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #38bdf8;
+}
+
+

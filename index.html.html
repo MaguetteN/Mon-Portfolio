@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Ndeye Magatte Ndiaye</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="hero-section">
+    <div class="hero-content">
+      <div class="profile-container">
+        <img src="votre-photo.jpg" alt="Photo de Ndeye Magatte Ndiaye" class="profile-photo">
+        <div class="profile-overlay"></div>
+      </div>
+      <h1>Ndeye Magatte Ndiaye</h1>
+      <div class="typing-text" id="typingText"></div>
+      
+      <div class="dashboard">
+        <div class="dashboard-item" data-target="about">
+          <i class="fas fa-user"></i>
+          <span>À propos</span>
+        </div>
+        <div class="dashboard-item" data-target="skills">
+          <i class="fas fa-laptop-code"></i>
+          <span>Compétences</span>
+        </div>
+        <div class="dashboard-item" data-target="projects">
+          <i class="fas fa-project-diagram"></i>
+          <span>Projets</span>
+        </div>
+        <div class="dashboard-item" data-target="education">
+          <i class="fas fa-graduation-cap"></i>
+          <span>Formation</span>
+        </div>
+        <div class="dashboard-item" data-target="experience">
+          <i class="fas fa-briefcase"></i>
+          <span>Expérience</span>
+        </div>
+        <div class="dashboard-item" data-target="contact">
+          <i class="fas fa-envelope"></i>
+          <span>Contact</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <!-- Contenu principal -->
+    <main class="content">
+      <!-- Section À propos -->
+      <section id="about" class="section" style="text-align: center;">
+        <h2><i class="fas fa-user"></i> À propos de moi</h2>
+        <p>Titulaire d'une Licence Professionnelle en Systèmes, Réseaux et Télécommunications, je suis passionnée par la cybersécurité et les réseaux. J'aspire à devenir administratrice réseaux et sécurité, un domaine qui me fascine par ses défis constants et ses innovations.</p>
+        <p>Actuellement en Master 1 Systèmes et Réseaux, je me spécialise en gestion des infrastructures réseaux, sécurité informatique et cloud. Ma rigueur, ma motivation et mon dynamisme sont des atouts que je mets au service de chaque projet.</p>
+        <p>Dotée d'un excellent sens relationnel et de solides compétences en communication, je sais travailler efficacement en équipe et m'adapter à différents environnements professionnels.</p>
+        
+        <div class="skills" id="skills">
+          <h3><i class="fas fa-laptop-code"></i> Compétences techniques</h3>
+          <div class="skill-category">
+            <h4>Réseaux</h4>
+            <div class="skill-items">
+              <span class="skill-item">TCP/IP</span>
+              <span class="skill-item">VLAN</span>
+              <span class="skill-item">Routage</span>
+              <span class="skill-item">VPN</span>
+              <span class="skill-item">Réseaux Mobiles </span>
+              <span class="skill-item">Réseaux sans fils </span>
+            </div>
+          </div>
+          
+          <div class="skill-category">
+            <h4>Sécurité</h4>
+            <div class="skill-items">
+              <span class="skill-item">Firewall</span>
+              <span class="skill-item">IDS/IPS</span>
+              <span class="skill-item">Pentesting</span>
+              <span class="skill-item">Cryptographie</span>
+            </div>
+          </div>
+          
+          <div class="skill-category">
+            <h4>Systèmes</h4>
+            <div class="skill-items">
+              <span class="skill-item">Linux</span>
+              <span class="skill-item">Windows Server</span>
+              <span class="skill-item">Active Directory</span>
+              <span class="skill-item">Windows</span>
+
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h4>Langages de programmation</h4>
+            <div class="skill-items">
+              <span class="skill-item">Java</span>
+              <span class="skill-item">HTML/CSS</span>
+              <span class="skill-item">C</span>
+              <span class="skill-item">Python</span>
+              <span class="skill-item">Dart</span>
+              <span class="skill-item">SQL</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Projets -->
+      <section id="projects" class="section">
+        <h2><i class="fas fa-project-diagram"></i> Projets académiques</h2>
+        
+        <div class="project">
+          <h3>🛡️ Mise en œuvre des attaques informatiques et propositions de solutions de sécurité (Projet de mémoire)</h3>
+          <ul>
+            <li>Réalisation d'attaques avancées :
+              <ul>
+                <li>Phishing et ingénierie sociale</li>
+                <li>Attaques DoS et DDoS</li>
+                <li>DNS Spoofing et attaques Man-in-the-Middle</li>
+                <li>Injection SQL et exploitation de bases de données</li>
+                <li>Attaques par force brute sur différents services</li>
+                <li>Implantation de portes dérobées et persistance</li>
+              </ul>
+            </li>
+            <li>Mise en place de solutions de sécurité :
+              <ul>
+                <li>Configuration d'IDS/IPS avec Snort et Suricata</li>
+                <li>Déploiement de pare-feu pfSense avec règles personnalisées</li>
+                <li>Utilisation d'outils spécialisés : Ettercap, Yersinia</li>
+                <li>Monitoring et détection d'intrusion en temps réel</li>
+              </ul>
+            </li>
+            <li>Documentation complète des vulnérabilités et contre-mesures</li>
+          </ul>
+        </div>
+
+        <div class="project">
+          <h3>📱 Application Flutter – Gestion des Certificat de domicile</h3>
+          <ul>
+            <li>Création de comptes uitlisateurs, gestion de quartiers et maisons par l'agent de la mairie.</li>
+            <li>Vérification des demandes par un administrateur.</li>
+            <li>Mise en place d'un Paytech pour le paiement des frais des certificats</li>
+            <li>Connexion MySQL via MAMP / PHPMyAdmin + modélisation PowerAMC.</li>
+            <li>Implémentation de la generation des certificats sous formats pdf apres validation.</li>
+          </ul>
+        </div>
+
+        <div class="project">
+          <h3>🌱 Système d'arrosage automatique intelligent (IoT)</h3>
+          <ul>
+            <li>Surveillance de l'humidité du sol + contrôle automatique d'une pompe.</li>
+            <li>Simulation locale avec NodeMCU et Arduino IDE.</li>
+            <li>Extension prévue vers une interface connectée.</li>
+            <li>Implémentation d'une application web pour la surveillance.</li>
+          </ul>
+        </div>
+
+        <div class="project">
+          <h3>🔒 Sécurité offensive – SEToolkit & Cracking de mots de passe</h3>
+          <ul>
+            <li>Utilisation du Social-Engineer Toolkit (SEToolkit) pour simuler des attaques d'ingénierie sociale.</li>
+            <li>Création de fausses pages de connexion pour tests de phishing.</li>
+            <li>Essais de brute-force sur mots de passe faibles (hashcat/john).</li>
+          </ul>
+        </div>
+
+        <div class="project">
+          <h3>💻 Administration système & réseaux</h3>
+          <ul>
+            <li>Mise en place d'une infrastructure réseau complète :
+              <ul>
+                <li>Configuration de serveurs DNS et DHCP</li>
+                <li>Déploiement de services de messagerie</li>
+                <li>Installation de serveurs TFTP et Telnet</li>
+                <li>Configuration de serveur web Apache</li>
+                <li>Mise en place d'un serveur de telecommunications Asterisk * </li>
+                <li>Administration cloud avec AWS</li>
+              </ul>
+            </li>
+            <li>Configuration avancée des services réseau :
+              <ul>
+                <li>Gestion des politiques de sécurité</li>
+                <li>Configuration de routeurs Cisco : VLAN, RIP, NAT, ACLs, OSPF, EIGRP</li>
+                <li>Administration Windows Server : GPO, Active Directory</li>
+              </ul>
+            </li>
+            <li>Virtualisation et cloud computing :
+              <ul>
+                <li>Déploiement de machines virtuelles avec VirtualBox/VMware</li>
+                <li>Gestion des services AWS</li>
+                <li>Monitoring et maintenance des systèmes</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="project">
+          <h3>📊 Application de gestion d'étudiants en Java</h3>
+          <ul>
+            <li>Application de bureau en Java Swing connectée à MySQL.</li>
+            <li>Fonctionnalités CRUD complètes avec interfaces conviviales.</li>
+          </ul>
+        </div>
+
+        <div class="project">
+          <h3>📡 Réseaux mobiles, Modulation numérique & Accès multiple</h3>
+          <ul>
+            <li>Etude et mise en œuvre de techniques de modulation : BPSK, QPSK, QAM, ASK, PSK ,FSK.</li>
+            <li>Simulation de canaux et transmission de données sur logiciels.</li>
+            <li>Analyse de technologies d'accès multiple : TDMA, CDMA, OFDMA dans les réseaux mbiles et wifi.</li>
+            <li>Etude de la topologie d'un réseau mobile et son implémentation.</li>
+
+          </ul>
+        </div>
+
+        <div class="project">
+          <h3>🌐 Réseaux WAN </h3>
+          <ul>
+            <li>Configuration et simulation de liaisons WAN avec Frame Relay et ATM.</li>
+            <li>Analyse de la commutation de paquets, des débits, de la QoS et des délais de transmission.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Section Formation -->
+      <section id="education" class="section">
+        <h2><i class="fas fa-graduation-cap"></i> Formation</h2>
+        <ul>
+          <li><strong>Master 1 Systèmes et Réseaux</strong> - UADB (2023-2024)  
+            <p>Formation axée sur la sécurité informatique, les réseaux informatiques, l’IoT et l’intelligence artificielle.</p>
+          </li>
+          <li><strong>Licence Systèmes, Réseaux et Télécommunications</strong> - UADB (2021-2023)  
+            <p>Projets académiques : Administration réseau, serveurs de messagerie, mise en œuvre d'attaques et solutions de sécurité.</p>
+          </li>
+          <li><strong>Baccalauréat Scientifique</strong> - Lycée Moderne de Rufisque (2020)  
+            <p>Spécialités : Sciences de la vie, Mathematiques, physique et chimie.</p>
+          </li>
+		  <li><strong>Camp de codage</strong> - ONU Femmes(2023)  
+          </li>
+        </ul>
+      </section>
+
+      <!-- Section Expérience Professionnelle -->
+      <section id="experience" class="section">
+        <h2><i class="fas fa-briefcase"></i> Expérience Professionnelle</h2>
+        
+        <div class="experience-item">
+          <h3>🌐 Technicienne Télécoms - Africa Mobile Network Service (AMNS)</h3>
+          <p class="experience-period">Stage</p>
+          <ul>
+            <li>Installation et configuration de pylônes de télécommunication</li>
+            <li>Mise en place de sites de connexion voix et données pour l'opérateur Free</li>
+            <li>Maintenance et optimisation des équipements réseau</li>
+          </ul>
+        </div>
+
+        <div class="experience-item">
+          <h3>💼 Assistante de Vente - Philip Morris</h3>
+          <p class="experience-period">CDD</p>
+          <ul>
+            <li>Gestion de la relation client</li>
+            <li>Suivi des objectifs commerciaux</li>
+            <li>Reporting et analyse des ventes</li>
+          </ul>
+        </div>
+
+        <div class="experience-item">
+          <h3>🎯 Hôtesse Événementielle - People No Limit</h3>
+          <p class="experience-period">Missions ponctuelles</p>
+          <ul>
+            <li>Accueil et orientation des participants</li>
+            <li>Gestion d'événements professionnels</li>
+            <li>Support logistique et organisationnel</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Section Contact -->
+      <section id="contact" class="section">
+        <h2><i class="fas fa-envelope"></i> Contactez-moi</h2>
+        <form id="contactForm">
+          <label for="name">Nom :</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email :</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Message :</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">Envoyer</button>
+        </form>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
